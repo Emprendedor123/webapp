@@ -1,0 +1,19 @@
+{
+  "name": "Carta Digital",
+  "short_name": "eBook Digital",
+  "description": "Carta Digital.",
+  "background_color": "#F7DF1E",
+  "theme_color": "#2196F3",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "index.html?launcher=true",
+  "scope": "./",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./images/pez.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

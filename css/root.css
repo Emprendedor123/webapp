@@ -1,0 +1,41 @@
+
+
+:root{
+    
+
+    /* ---Colors---*/
+    --colorwhite:white;
+    --colordanger:#FA5858;
+    --colorsuccess:#4DD15F;
+    --colorsky:#00BFFF;
+    --colororgange:#FE9A2E;
+    --colorpink:#FE2EF7;
+    --colorgold:gold;
+    --colorh3:#58FAAC;
+    --colorh4:#9A2EFE;
+    --colorh5:#FFBF00;
+    --colorh6:#01A9DB;
+    --colorfondo:red;
+    --colorpink:#FE2EF7;
+    --colorcian:#00bcd4;
+    --bluelighten5:#e3f2fd;
+    --bluelighten4:#bbdefb;
+    --bluelighten3:#90caf9;
+    --bluelighten2:#64b5f6;
+    --bluelighten1:#42a5f5;
+    --bluedarken5:#2196f3;
+    --bluedarken4:#0d47a1;
+    --bluedarken3:#1565c0;
+    --bluedarken2:#1976d2;
+    --bluedarken1:#1e88e5;
+}
+
+
+    /* --- Import Fonts ---*/
+@font-face {
+    font-family: forte;
+    src: url(FORTE.ttf);
+
+    font-family: stocky;
+    src:url(stocky.ttf);
+}

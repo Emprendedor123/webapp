@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+  	});
+  </script>
+  <style type="text/css">
+  	.product-item{
+  		height: 200px;
+  		padding: 10px;
+  	}
+  	.product-img{
+  		height: 100%;
+  		width: 100%;
+  		
+  	}
+  </style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		  	<div class="button-group filter-button-group">
+			  <button class="btn btn-success active" data-filter="*">show all</button>
+			  <button data-filter=".cat1">Arroz con pollo</button>
+			  <button data-filter=".cat2">Lomo saltado</button>
+			</div>
+  		</div>
+	</div>
+</div>
+
+<div class="container">
+  <div class="row">
+  	<div class="grid">
+  		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat1">
+	 	 
+	      <img class="center-block product-img" src="images/arroz-con-pollo-min.jpg"/>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat1">
+	 	  
+	      <img class="center-block product-img" src="images/arroz-con-pollo-min.jpg"/>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat1">
+	 	
+	      <img class="center-block product-img" src="images/arroz-con-pollo-min.jpg"/>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat1">
+	 	
+	      <img class="center-block product-img" src="images/arroz-con-pollo-min.jpg"/>
+	    </div>
+
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat2 bg-danger">
+	 	  
+	      <img class="center-block product-img" src="images/lomo-saltado-min.jpg" />
+	    </div>
+
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat2">
+	 	  
+	      <img class="center-block product-img" src="images/lomo-saltado-min.jpg" />
+	    </div>
+
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat2">
+	 	  
+	      <img class="center-block product-img" src="images/lomo-saltado-min.jpg" />
+	    </div>
+
+	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 product-item grid-item cat2">
+	 	  
+	      <img class="center-block product-img" src="images/lomo-saltado-min.jpg" />
+	    </div>
+	  
+  	</div>
+  </div>
+</div>
+
+</body>
+</html>
